@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>RecipeShare-website</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<style>
+    .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: green;
+    --bs-btn-border-color:green;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: green;
+    --bs-btn-hover-border-color: green;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #green;
+    --bs-btn-active-border-color: green;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: green;
+    --bs-btn-disabled-border-color: green;
+    }
+   
+   .recipe-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .recipe-card .card-text {
+        flex: 1;
+    }
+
+    /* Set a fixed height for the images */
+    .card-img-top {
+        height: 200px; /* Adjust the height as needed */
+        object-fit: cover; /* Ensure the image covers the entire space */
+    }
+</style>
+
+</style>
+<body>
+    <header id="header" class="fixed-top d-flex align-items-center" style="position: static;">
+        <div class="container d-flex justify-content-between">
+          <div class="logo">
+            <h1><a href="fix.html"><span>Recipe</span>Share</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+          </div>
+      
+          <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link" href="fix.html">Home</a></li>         
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link active" href="recipes.html">Recipes</a></li>         
+                <li><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                <li><a class="nav-link" href="contactb.html">Contact us</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </header><!-- End Header -->
+      
+    
+    <!-- Include Header -->
+    <?php include 'header.html'; ?>
+
+    <div class="container mt-5">
+        <h1>Recipes</h1>
+        <p>Explore our collection of recipes:</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="recipe1.jpg" class="card-img-top" alt="Recipe 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza Margherita</h5>
+                        <p class="card-text">Savor the simplicity of our Margherita Pizza: tangy tomato sauce,
+                             fresh mozzarella atop a crispy crust.</p>
+                        <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="recipe2.jpg" class="card-img-top" alt="Recipe 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Alfredo</h5>
+                        <p class="card-text">Savor our Chicken Alfredo: tender chicken and al dente fettuccine in creamy Alfredo sauce, 
+                            a savory symphony of flavors. </p>
+                        <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="recipe3.jpg" class="card-img-top" alt="Recipe 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Barbeque Wings</h5>
+                        <p class="card-text">Savor our succulent Barbecue Wings: crispy,
+                             coated in signature sauce, bursting with sweet and tangy flavor.
+                             </p>
+                        <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="recipe4.jpg" class="card-img-top" alt="Recipe 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Chorizo Tacos</h5>
+                        <p class="card-text">Succulent chorizo sausage nestled in warm corn tortillas,
+                             topped with crisp lettuce, diced tomatoes, and zesty salsa—a fiesta for your taste buds.
+                             </p>
+                        <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="recipe5.jpg" class="card-img-top" alt="Recipe 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Biryani</h5>
+                        <p class="card-text"> Fragrant basmati rice cooked with tender chicken pieces and aromatic spices,
+                             creating a symphony of flavors that's both comforting and irresistible, original biryani recipe.
+                             </p>
+                        <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="recipe6.jpg" class="card-img-top" alt="Recipe 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Lasagna</h5>
+                        <p class="card-text">Layers of pasta sheets, rich marinara sauce, creamy béchamel,
+                             savory ground meat, and melted cheese, baked to perfection for a comforting and hearty Italian classic.
+                             </p>
+                        <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Footer -->
+    <?php include 'footer.html'; ?>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+    <script>
+        // Function to set the active class on the navigation bar based on the current URL
+        function setActiveNav() {
+          // Get the current URL path
+          const path = window.location.pathname;
+          
+          // Define a mapping of paths to their corresponding nav item IDs
+          const navItems = {
+            '/index.html': 'nav-home',
+            '/recipes.html': 'nav-recipes',
+            '/about.html': 'nav-about',
+            '/portfolio.html': 'nav-portfolio',
+            '/contact.html': 'nav-contact',
+          };
+          
+          // Remove 'active' class from all nav items
+          Object.values(navItems).forEach(id => {
+            const element = document.getElementById(id);
+            if (element) {
+              element.classList.remove('active');
+            }
+          });
+          
+          // Add 'active' class to the current nav item
+          const activeNavItem = navItems[path];
+          if (activeNavItem) {
+            const activeElement = document.getElementById(activeNavItem);
+            if (activeElement) {
+              activeElement.classList.add('active');
+            }
+          }
+        }
+      
+        // Call the function to set the active nav item on page load
+        document.addEventListener('DOMContentLoaded', setActiveNav);
+      </script>
+      
+</body>
+</html>

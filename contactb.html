@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>RecipeShare-website</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<style>
+    body {
+    background-image: url('contback.jpg');
+    background-size: cover; /* Adjusts the image to cover the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+    .wrapper1 {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: white;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .wrapper1 .title1 h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 3.5rem;
+  }
+  
+  .contact-form {
+    
+    display: flex;
+  }
+  
+  .uil {
+    height: 50px;
+    width: 50px;
+
+  }
+  
+  .input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+  
+  .input-fields,
+  .msg {
+    width: 200%;
+  }
+  
+  .input-fields .input,
+  .msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #5f66618f;
+    padding: 10px;
+    color: black;
+    width: 100%;
+  }
+  
+  .msg textarea {
+    height: 100px;
+  }
+  .msg .btn1 {
+    margin-top: 1rem;
+    display: inline-block;
+    border: 0.2rem solid green;
+    color: black;
+    cursor: pointer;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    border-radius: 40px;
+    background: none;
+  }
+  .btn1 button[type="submit"] {
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  
+</style>
+
+
+<body>
+    <header id="header" class="fixed-top d-flex align-items-center" style="position: static;">
+        <div class="container d-flex justify-content-between">
+          <div class="logo">
+            <h1><a href="fix.html"><span>Recipe</span>Share</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+          </div>
+      
+          <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link" href="fix.html">Home</a></li>         
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="recipes.html">Recipes</a></li>         
+                <li><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                <li><a class="nav-link active" href="contactb.html">Contact us</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </header><!-- End Header -->  
+
+    <div class="wrapper1">
+        <div class="title1">
+          <h1 style="color: green;">Contact us</h1>
+        </div>
+        <div class="contact-form">
+            <form method = "post" action = "contact_us.php">
+          <div class="input-fields">
+            
+            <input type="text" class="input"  placeholder="Name" name="name">
+            <input type="email" class="input"  placeholder="Email Address" name="email" pattern=".+@gmail\.com">
+            <input type="phone" class="input"  placeholder="Phone" name="phone">
+            <input type="text" class="input"  placeholder="Subject" name="subject">
+          </div>
+          <div class="msg">
+            <textarea placeholder="Message" name="message"></textarea> <br>
+            <button type="button" class="btn btn-primary btn-small" fdprocessedid="gxon17">Send</button>
+          </div>
+          </form>
+        </div>
+          </div>
+<!--footer-->
+<footer>
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-content">
+                        <div class="footer-head">
+                            <div class="footer-logo">
+                                <h2><span style="color: green;">Recipe</span>Share</h2>
+                            </div>
+                            <p>At RecipeShare, we believe that cooking should be a joyous and rewarding experience. Our mission is to bring you a diverse collection of delicious and easy-to-make recipes that inspire culinary creativity. Whether you're a seasoned chef or a home cook, our recipes are designed to suit all skill levels and tastes. Join our community and explore the endless possibilities of flavor!</p>
+                            <div class="footer-icons">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single footer -->
+                <div class="col-md-4">
+                    <div class="footer-content">
+                        <div class="footer-head">
+                            <h4>Information</h4>
+                            <p>
+                                Discover a variety of recipes that cater to every palate, from savory meals to sweet treats. Stay updated with our latest culinary creations, tips, and tricks by following us on social media. Have questions or need assistance? We're here to help.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- end single footer -->
+                <div class="col-md-4">
+                    <div class="footer-content">
+                        <div class="footer-head">
+                            <h4>Contact Info</h4>
+                            <p>If you have any questions or need assistance, feel free to reach out to us. We're here to help!</p>
+                            <div class="footer-contacts">
+                                <p><span style="color: green;">Phone:</span> (123) 456-7890</p>
+                                <p><span style="color: green;">Email:</span> recipeshare@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+ <script>
+  // Function to set the active class on the navigation bar based on the current URL
+  function setActiveNav() {
+    // Get the current URL path
+    const path = window.location.pathname;
+    
+    // Define a mapping of paths to their corresponding nav item IDs
+    const navItems = {
+      '/fix.html': 'nav-home',
+      '/about.html': 'nav-about',
+      '/recipes.html': 'nav-recipes',
+      '/testimonials.html': 'nav-testimonials',
+      '/contactb.html': 'nav-contact'
+        };
+
+        // Get the ID of the corresponding nav item
+        const navItemId = navItems[path];
+
+        // If the nav item exists, add the 'active' class to it
+        if (navItemId) {
+          document.getElementById(navItemId).classList.add('active');
+        }
+      }
+
+      // Function to toggle the mobile navigation menu
+      function toggleMobileNav() {
+        const navbar = document.getElementById('navbar');
+        navbar.classList.toggle('navbar-mobile');
+        this.classList.toggle('bi-list');
+        this.classList.toggle('bi-x');
+      }
+
+      // Event listener for the mobile nav toggle button
+      document.querySelector('.mobile-nav-toggle').addEventListener('click', toggleMobileNav);
+
+      // Run the setActiveNav function on page load
+      window.addEventListener('load', setActiveNav);
+    </script> 
+
+</body>
+</html>  
+
+  

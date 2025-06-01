@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>RecipeShare-Website</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center" style="position: static;">
+    <div class="container d-flex justify-content-between">
+      <div class="logo">
+        <h1><a href="fix.html"><span>Recipe</span>Share</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+  
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link " href="fix.html">Home</a></li>         
+          <li><a class="nav-link active" href="about.html">About</a></li>
+          <li><a class="nav-link" href="recipes.html">Recipes</a></li>         
+          <li><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li><a class="nav-link" href="contactb.html">Contact us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+    <!-- Include Header -->
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <div id="about" class="about-area area-padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="section-headline text-center">
+                  <h2>About RecipeShare</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- single-well start-->
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="well-left">
+                  <div class="single-well">
+                    <a href="#">
+                      <img src="assets/img/about/forAbout.jpg" alt="" height="450" width="450">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- single-well end-->
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="well-middle">
+                  <div class="single-well">
+                    <a href="#">
+                      <h4 class="sec-head">Wholesome Cooking</h4>
+                    </a>
+                    <p>
+                      Welcome to RecipeShare! We're all about bringing you delicious recipes for every occasion. Founded in 2024, our mission is to make cooking easy and enjoyable for everyone. Whether you're a beginner or a seasoned chef, we've got you covered with a wide range of flavorful dishes. Happy cooking from the RecipeShare team!
+                    </p>
+                    <ul>
+                      <li>
+                        <i class="bi bi-check"></i> Flavorful Feasts
+                      </li>
+                      <li>
+                        <i class="bi bi-check"></i> Quick Cuisine
+                      </li>
+                      <li>
+                        <i class="bi bi-check"></i> Gourmet Goodness
+                      </li>                  
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- End col-->
+            </div>
+          </div>
+        </div><!-- End About Section -->
+      <script>
+      // Function to set the active class on the navigation bar based on the current URL
+      function setActiveNav() {
+        // Get the current URL path
+        const path = window.location.pathname;
+        
+        // Define a mapping of paths to their corresponding nav item IDs
+        const navItems = {
+          '/fix.html': 'nav-home',
+          '/about.html': 'nav-about',
+          '/recipes.html': 'nav-recipes',
+          '/testimonials.html': 'nav-testimonials',
+          '/contactb.html': 'nav-contact',
+        };
+        
+        // Remove 'active' class from all nav items
+        Object.values(navItems).forEach(id => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.classList.remove('active');
+          }
+        });
+        
+        // Add 'active' class to the current nav item
+        const activeNavItem = navItems[path];
+        if (activeNavItem) {
+          const activeElement = document.getElementById(activeNavItem);
+          if (activeElement) {
+            activeElement.classList.add('active');
+          }
+        }
+      }
+    
+      // Call the function to set the active nav item on page load
+      document.addEventListener('DOMContentLoaded', setActiveNav);
+
+      // Toggle mobile nav menu
+      document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+        const navbar = document.getElementById('navbar');
+        navbar.classList.toggle('navbar-mobile');
+        this.classList.toggle('bi-list');
+        this.classList.toggle('bi-x');
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll('#navbar .nav-link').forEach(function(navLink) {
+        navLink.addEventListener('click', function() {
+          const navbar = document.getElementById('navbar');
+          if (navbar.classList.contains('navbar-mobile')) {
+            navbar.classList.remove('navbar-mobile');
+            document.querySelector('.mobile-nav-toggle').classList.toggle('bi-list');
+            document.querySelector('.mobile-nav-toggle').classList.toggle('bi-x');
+          }
+        });
+      });
+    </script>
+</body>
+</html>
